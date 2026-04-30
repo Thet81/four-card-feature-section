@@ -5,48 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./styles.css">
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-    .grid-container {
-      display: grid;
-      height: 300px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 20% 1fr 20%;
-      gap: 20px;
-      border: 1px solid red;
-      padding: 2rem;
-    }
-
-    .supervisor {
-      grid-row: 2/3;
-    }
-
-    .multi {
-      grid-row: 1/4;
-    }
-
-    .calculator {
-      grid-row: 2/3;
-    }
-
-    .grid-container > div {
-      border: 1px solid blue;
-      border-radius: 10px;
-    }
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <div>
-    <div>
-      Reliable, efficient delivery Powered by Technology
-         Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+  <div class="main">
+    <div class="heading">
+        <h2 class="tags">Reliable, efficient delivery</h2>
+        <h2>Powered by Technology</h2>
+        <p>
+           Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+        </p>
     </div>
     <div class="grid-container">
         <div class="supervisor">
@@ -54,19 +24,28 @@
             <p>
               Monitors activity to identify project roadblocks
             </p>
+            <div>
+              <img src="./images/icon-supervisor.svg" alt="Description of image" width="50" height="50">
+            </div>
         </div>
           <div class="multi">
-             <div>
+             <div class="team-builder">
               <h3>Team Builder</h3>
               <p>
                  Scans our talent network to create the optimal team for your project
               </p>
+              <div>
+                <img src="./images/icon-team-builder.svg" alt="Description of image" width="50" height="50">
             </div>
-            <div>
+            </div>
+            <div class="karma">
               <h3>Karma</h3>
               <p>
                  Regularly evaluates our talent to ensure quality
               </p>
+              <div>
+                <img src="./images/icon-karma.svg" alt="Description of image" width="50" height="50">
+            </div>
             </div>
           </div>
         <div class="calculator">
@@ -74,6 +53,9 @@
           <p>
               Uses data from past projects to provide better delivery estimates
           </p>
+          <div>
+              <img src="./images/icon-calculator.svg" alt="Description of image" width="50" height="50">
+            </div>
         </div>
       </div>
   </div>

@@ -1,0 +1,31 @@
+/*styles.bk.css*/
+
+
+    .grid-container {
+      display: grid;
+      height: 300px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 20% 1fr 20%;
+      gap: 20px;
+      border: 1px solid red;
+      padding: 2rem;
+    }
+
+    .supervisor {
+      grid-row: 2/3;
+    }
+
+    .multi {
+      grid-row: 1/4;
+    }
+
+    .calculator {
+      grid-row: 2/3;
+    }
+
+    .grid-container > div {
+      border: 1px solid blue;
+      border-radius: 10px;
+    }
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
