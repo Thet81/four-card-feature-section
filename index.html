@@ -7,74 +7,56 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-    .grid-container {
-      display: grid;
-      height: 300px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 20% 1fr 20%;
-      gap: 20px;
-      border: 1px solid red;
-      padding: 2rem;
-    }
-
-    .supervisor {
-      grid-row: 2/3;
-    }
-
-    .multi {
-      grid-row: 1/4;
-    }
-
-    .calculator {
-      grid-row: 2/3;
-    }
-
-    .grid-container > div {
-      border: 1px solid blue;
-      border-radius: 10px;
-    }
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
 
-  <div>
-    <div>
-      Reliable, efficient delivery Powered by Technology
-         Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
-    </div>
-    <div class="grid-container">
-        <div class="supervisor">
-            <h3>Supervisor</h3>
-            <p>
-              Monitors activity to identify project roadblocks
-            </p>
-        </div>
-          <div class="multi">
-             <div>
-              <h3>Team Builder</h3>
-              <p>
-                 Scans our talent network to create the optimal team for your project
-              </p>
+  <div class="main">
+      <div class="header">
+          <h2>Reliable, efficient delivery</h2>
+          <h2>Powered by Technology</h2>
+           <p>
+             Our Artificial Intelligence powered tools use millions of project data <br>
+             points to ensure that your project is successful
+           </p>
+      </div>
+      <div class="supervisor grid-items">
+          <h3>Supervisor</h3>
+          <p>
+            Monitors activity to identify project roadblocks
+          </p>
+          <div class="svg">
+              <img src="./images/icon-supervisor.svg" alt="Description of SVG" width="50" height="50">
             </div>
-            <div>
-              <h3>Karma</h3>
-              <p>
-                 Regularly evaluates our talent to ensure quality
-              </p>
+      </div>
+        <div class="multi">
+           <div class="team-builder grid-items">
+            <h3>Team Builder</h3>
+            <p>
+               Scans our talent network to create the optimal team for your project
+            </p>
+            <div class="svg">
+              <img src="./images/icon-team-builder.svg" alt="Description of SVG" width="50" height="50">
             </div>
           </div>
-        <div class="calculator">
-          <h3>Calculator</h3>
-          <p>
-              Uses data from past projects to provide better delivery estimates
-          </p>
+          <div class="karma grid-items">
+            <h3>Karma</h3>
+            <p>
+               Regularly evaluates our talent to ensure quality
+            </p>
+            <div class="svg">
+              <img src="./images/icon-karma.svg" alt="Description of SVG" width="50" height="50">
+            </div>
+          </div>
         </div>
+      <div class="calculator grid-items">
+        <h3>Calculator</h3>
+        <p>
+            Uses data from past projects to provide better delivery estimates
+        </p>
+        <div class="svg">
+              <img src="./images/icon-calculator.svg" alt="Description of SVG" width="50" height="50">
+            </div>
       </div>
   </div>
   <footer class="attribution">
